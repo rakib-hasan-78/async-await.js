@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body class="min-vh-100 d-flex align-items-center align-content-center justify-content-center flex-column text-capitalize fw-medium">
+    <header>
+      <main>
+        <div class="container-xxl container-xl container-lg container-md container-sm">
+          <div class="row">
+            <div class="col-12">
+              <div class="d-flex flex-wrap flex-column align-items-center align-content-center justify-content-around py-2 gap-3">
+
+                <h1>async await fetch test</h1>
+                <div class="d-flex align-items-center flex-md-row flex-column gap-2">
+                  <button type="button" id="load-data" class="btn btn-primary text-capitalize text-white">load data</button>
+                  <button type="button" id="add-data" class="btn btn-primary text-capitalize text-white">add data</button>
+                  <button type="button" class="btn btn-info text-capitalize text-white" id="edit-data">edit data</button>
+                  <button type="button" id="delete-data" class="btn btn-danger text-capitalize text-white">delete data</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </header>
+    <section>
+      <main>
+        <div class="container">
+          <div class="row">
+            <div id="data-info"></div>
+          </div>
+        </div>
+      </main>
+    </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script type="module" src="./index.js"></script>
+  </body>
+</html>
