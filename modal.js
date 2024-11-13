@@ -1,6 +1,6 @@
-import { closeFunction } from "./functions.js";
+import { closeFunction, eventFunction } from "./functions.js";
 
-export const modal = (title, bodyText) => {
+export const modal = (title, bodyText, action) => {
     const body = document.querySelector('body');
     const backDrop = document.createElement('div');
     backDrop.className = 'modal-backdrop fade show';
@@ -23,19 +23,27 @@ export const modal = (title, bodyText) => {
             <button class="btn btn-danger text-capitalize py-2 px-3 w-100 w-md-25">discard</button>
         </div>
         </div>
-    </div>
+    </div>  
 
     `
     body.append(modal);
 
-    //cancel icon handler
+    //cancel icon handler ------->
     modal.querySelector('.btn-close').addEventListener('click', () => {
         closeFunction(body, backDrop, modal);
     });
-    // close button
+    // close button ----->
     modal.querySelector('.btn-danger').addEventListener('click', (e)=>{
         e.preventDefault();
         closeFunction(body, backDrop, modal);
-    }) 
+    });
+    //action initiating button ------> 
+    const actionBtn = modal.querySelector('.btn-success');
+    actionBtn.addEventListener('click', (e)=>{
+        const newObj = {}
+        e.preventDefault();
+        eventFunction(action, newObj)
+        closeFunction(body, backDrop, modal);
+    });
 }
 
