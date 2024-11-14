@@ -11,18 +11,14 @@
   <body class="min-vh-100 d-flex align-items-center align-content-center justify-content-center flex-column text-capitalize fw-medium">
     <header>
       <main>
-        <div class="container-xxl container-xl container-lg container-md container-sm">
+        <div class="container-xl w-100">
           <div class="row">
             <div class="col-12">
-              <div class="d-flex flex-wrap flex-column align-items-center align-content-center justify-content-around py-2 gap-3">
+              <div class="d-flex flex-wrap flex-column align-items-center justify-content-around py-2 gap-3">
 
                 <h1>async await fetch test</h1>
-                <div class="d-flex align-items-center flex-md-row flex-column gap-2">
-                  <button type="button" id="load-data" class="btn btn-success text-capitalize text-white">load data</button>
-                  <button type="button" id="add-data" class="btn btn-primary text-capitalize text-white">add data</button>
-                  <button type="button" class="btn btn-info text-capitalize text-white" id="edit-data">edit data</button>
-                  <button type="button" id="delete-data" class="btn btn-danger text-capitalize text-white">delete data</button>
-
+                  <div class="d-flex flex-md-row flex-column gap-3 my-4">
+                    <button id="load-data" type="button" class="btn btn-success text-capitalize fw-bold">load data</button><button id="add-data" type="button" class="btn btn-primary text-capitalize fw-bold">add data</button><button id="edit-data" type="button" class="btn btn-info text-capitalize fw-bold text-white">edit data</button><button id="delete-data" type="button" class="btn btn-danger text-capitalize fw-bold">delete data</button>
                 </div>
               </div>
             </div>
@@ -32,9 +28,8 @@
     </header>
     <section>
       <main>
-        <div class="container">
-          <div class="row">
-            <div id="data-info"></div>
+        <div class="container py-5 my-5">
+          <div id="data-info"  class="row justify-content-center gap-4">
           </div>
         </div>
       </main>

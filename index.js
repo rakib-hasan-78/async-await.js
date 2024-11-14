@@ -11,21 +11,23 @@ loadData.addEventListener('click', (e) => {
 const addData = document.getElementById('add-data');
 addData.addEventListener('click', (e)=>{
     e.preventDefault();
-    modal('Adding Data....', 'Do you want to add another data ??');
+    modal('Adding Data....', 'Do you want to add another data ??', 'post');
 });
 
 const editData = document.getElementById('edit-data');
 editData.addEventListener('click', (e)=>{
     e.preventDefault();
-    modal('Data editing...', 'are sure to edit data ?');
+    modal('Data editing...', 'are sure to edit data ?','put');
 });
 
 
 const deleteData = document.getElementById('delete-data');
 deleteData.addEventListener('click', (e)=>{
     e.preventDefault();
-    modal('Data Deleation',`once delted, it won't be recovered....`);
+    modal('Data Deleation',`once delted, it won't be recovered....`, 'delete');
 });
+
+
 
 (function loadDataOnPageLoad() {
 
@@ -41,3 +43,4 @@ deleteData.addEventListener('click', (e)=>{
     }  
 
 })();
+
